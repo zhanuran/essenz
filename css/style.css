@@ -1,0 +1,99 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #14264F;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: #14264F;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #14264F;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    background-color: #ffffff10;
+    padding: 50px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.banner .button {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #14264F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner .button:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #14264F;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Уменьшение ширины продуктов на мобильных устройствах */
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
